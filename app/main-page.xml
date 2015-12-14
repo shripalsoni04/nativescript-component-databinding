@@ -1,0 +1,25 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"  
+      xmlns:greetings="components/greetings"
+      loaded="pageLoaded">
+  <StackLayout style="padding: 10;">
+    
+    <!-- Propery (msg) in main page, which we want to bind to the greetingsComponent -->
+    <StackLayout style="padding-bottom: 30;">
+      <Label text="Message in main page: " style="color: blue;"/>
+      <TextField text="{{msg}}"></TextField>
+    </StackLayout>
+    
+    <!-- Binding component property via xml: not working -->
+    <StackLayout style="padding-bottom: 30;">
+      <Label text="Bining In XML " style="color: blue;" />
+      <greetings:GreetingsComponent message="{{msg}}" />
+    </StackLayout>
+    
+    <!-- Binding component property via code: working -->
+    <StackLayout style="padding-bottom: 30;">
+      <Label text="Binding Via Code " style="color: blue;"/>
+      <greetings:GreetingsComponent id="greetingsComponent" />
+    </StackLayout>
+    
+  </StackLayout>
+</Page>

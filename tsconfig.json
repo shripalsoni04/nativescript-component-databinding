@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "inlineSourceMap": true,
+    "experimentalDecorators": true
+  },
+  "files": [
+    "app/components/greetings.ts",
+    "app/home.ts",
+    "app/main-page.ts",
+    "app/main-view-model.ts",
+    "app/references.d.ts",
+    "node_modules/tns-core-modules/tns-core-modules.d.ts"
+  ],
+  "filesGlob": [
+    "node_modules/tns-core-modules/tns-core-modules.d.ts",
+    "app/**/*.ts"
+  ]
+}

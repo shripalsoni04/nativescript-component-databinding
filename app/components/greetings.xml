@@ -1,0 +1,5 @@
+<StackLayout>
+	<Label text="Message in greetings component : " />	
+	<TextField text="{{message}}"></TextField>
+	<Label text="{{message}}" />
+</StackLayout>

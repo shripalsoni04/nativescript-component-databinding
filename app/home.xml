@@ -1,0 +1,7 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" >
+	
+	<StackLayout>	  
+		<Label text="Welcome Home!" /> 
+		<Button text="Go To Main Page" tap="goToMainPage" />
+	</StackLayout> 
+</Page>
